@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sankalp Se Saksham Foundation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --orange: #ff6b00;
+      --dark-orange: #e65c00;
+      --light-bg: #fefbf8;
+      --card-bg: #fff3e0;
+      --section-bg: #fff8f0;
+      --footer-bg: #333;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light-bg);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: var(--orange);
+      color: white;
+      padding: 32px 20px 20px 20px;
+      text-align: center;
+      position: relative;
+    }
+    img.logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 16px auto;
+      display: block;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      background: #fff;
+      object-fit: cover;
+      padding: 8px;
+    }
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+    .slogan {
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    nav {
+      background: var(--dark-orange);
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+    nav a {
+      color: white;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #ffe6d1;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1500&q=80') center/cover;
+      color: white;
+      padding: 100px 20px 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .hero:after {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(255,107,0,0.22);
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-shadow: 0 2px 6px rgba(0,0,0,.09);
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: auto;
+      text-shadow: 0 2px 8px rgba(0,0,0,.07);
+    }
+    section {
+      padding: 60px 20px 45px 20px;
+      max-width: 1050px;
+      margin: auto;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 32px;
+      color: var(--orange);
+      letter-spacing: 1px;
+    }
+    .about-text {
+      text-align: center;
+      font-size: 1.18rem;
+      max-width: 800px;
+      margin: 0 auto 10px auto;
+      line-height: 1.7;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+      margin-top: 18px;
+    }
+    .card {
+      flex: 1 1 260px;
+      max-width: 285px;
+      padding: 28px 20px;
+      border-radius: 10px;
+      background: var(--card-bg);
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      min-width: 220px;
+      margin-bottom: 10px;
+      transition: transform 0.16s, box-shadow 0.16s;
+    }
+    .card:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 8px 24px rgba(255,107,0,0.18);
+    }
+    .card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.5;
+    }
+    .contact {
+      background: var(--section-bg);
+      border-top: 4px solid var(--orange);
+      border-radius: 16px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .contact-details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin: 18px 0 12px 0;
+      font-size: 1.08rem;
+    }
+    .contact-details div {
+      margin-bottom: 4px;
+    }
+    .contact strong {
+      color: var(--dark-orange);
+    }
+    .social {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 1.11rem;
+    }
+    .social a {
+      color: var(--orange);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.18s;
+    }
+    .social a:hover {
+      color: #ff914d;
+      text-decoration: underline;
+    }
+    .footer {
+      background: var(--footer-bg);
+      color: white;
+      text-align: center;
+      padding: 20px 10px 16px 10px;
+      margin-top: auto;
+      font-size: 1.05rem;
+      letter-spacing: .4px;
+    }
+    @media (max-width: 850px) {
+      .grid {
+        flex-direction: column;
+        gap: 18px;
+      }
+      .card {
+        max-width: 100%;
+      }
+      section {
+        padding: 55px 6vw 35px 6vw;
+      }
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6rem; }
+      .section-title { font-size: 1.5rem; }
+      .hero h2 { font-size: 1.3rem; }
+      .hero { padding: 60px 8px 38px 8px; }
+      nav a { margin: 0 7px; font-size: 1rem; }
+      .about-text { font-size: 1rem; }
+      .footer { font-size: .97rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Sankalp Se Saksham Logo" class="logo">
+    <h1>Sankalp Se Saksham Foundation</h1>
+    <div class="slogan">Seva Ek Sankalp</div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#work">Our Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h2>Empowering Society Through Education, Health, and Nature</h2>
+      <p>
+        Dedicated to building a morally strong and culturally rooted community by uplifting underprivileged children, empowering women, promoting health, and protecting nature.<br>
+        Together, let's make India proud and become a Vishwaguru.
+      </p>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="section-title">About Us</div>
+    <div class="about-text">
+      Sankalp Se Saksham Foundation is a registered NGO with a unique mission to educate society, not just with academics, but with moral values and a deep connection to our culture.
+      <br><br>
+      We are committed to eradicating crime, corruption, and negativity by nurturing better human beings. Through our efforts, we help India move towards becoming a proud Vishwaguru.
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="section-title">Our Work</div>
+    <div class="grid">
+      <div class="card">
+        <h3>📚 Education for Children</h3>
+        <p>Providing free education and study materials to underprivileged children, with a focus on moral values and cultural roots.</p>
+      </div>
+      <div class="card">
+        <h3>👩‍🎓 Women Empowerment</h3>
+        <p>Empowering women through skills training, education, and financial awareness for a self-reliant future.</p>
+      </div>
+      <div class="card">
+        <h3>💉 Health Camps</h3>
+        <p>Organizing free medical checkups and wellness programs for communities in need, ensuring a healthier tomorrow.</p>
+      </div>
+      <div class="card">
+        <h3>🌳 Tree Plantation & Environment</h3>
+        <p>Promoting a healthy environment through plantation drives and awareness campaigns to protect and nurture nature.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-title">Contact Us</div>
+    <div class="contact-details">
+      <div>
+        <strong>NGO Email:</strong> sankalpsesakshamfoundation@gmail.com
+      </div>
+      <div>
+        <strong>Founder:</strong> Mohit Kumar<br>
+        📞 7781028518<br>
+        ✉️ <a href="mailto:mohitvats34@gmail.com">mohitvats34@gmail.com</a>
+      </div>
+      <div>
+        <strong>Co-Founder:</strong> Aman Kumar<br>
+        📞 9939204761<br>
+        ✉️ <a href="mailto:kumaraman193920@gmail.com">kumaraman193920@gmail.com</a>
+      </div>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/sankalpsesaksham_foundation?igsh=MTEzeWlxYzU3MjJjcg==" target="_blank" rel="noopener">Follow us on Instagram</a>
+    </div>
+    <div class="social" style="margin-top:8px;font-size:.98rem;">
+      <strong>Regd. No. 076990/2025</strong>
+    </div>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 Sankalp Se Saksham Foundation. All rights reserved.
+  </footer>
+
+</body>
+</html>
