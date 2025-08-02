@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sankalp Se Saksham Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Poppins', sans-serif;
+background: #fefbf8;
+color: #333;
+}
+header {
+background-color: #ff6b00;
+color: white;
+padding: 40px 20px;
+text-align: center;
+}
+header img {
+width: 160px;
+height: auto;
+margin-bottom: 10px;
+}
+nav {
+background: #e65c00;
+padding: 12px;
+text-align: center;
+}
+nav a {
+color: white;
+margin: 0 15px;
+text-decoration: none;
+font-weight: 600;
+font-size: 16px;
+}
+.hero {
+background: url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1500&q=80') center/cover;
+color: white;
+padding: 100px 20px;
+text-align: center;
+}
+.hero h1 {
+font-size: 3rem;
+margin-bottom: 10px;
+}
+.hero p {
+font-size: 1.2rem;
+margin-bottom: 20px;
+}
+section {
+padding: 60px 20px;
+max-width: 1000px;
+margin: auto;
+}
+.section-title {
+text-align: center;
+font-size: 2rem;
+margin-bottom: 40px;
+color: #ff6b00;
+}
+.grid {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+justify-content: center;
+}
+.card {
+flex: 1 1 250px;
+padding: 20px;
+border-radius: 8px;
+background: #fff3e0;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.contact {
+background: #fff8f0;
+border-top: 4px solid #ff6b00;
+}
+.footer {
+background: #333;
+color: white;
+text-align: center;
+padding: 20px;
+}
+.contact a {
+color: #ff6b00;
+text-decoration: none;
+font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<header>
+<img src="logo.png.jpg" alt="Sankalp Se Saksham Foundation Logo">
+<h1>Sankalp Se Saksham Foundation</h1>
+<p><strong>Seva Ek Sankalp</strong></p>
+</header>
+
+<nav>
+<a href="#about">About Us</a>
+<a href="#programs">Our Work</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+<h1>Empowering Society</h1>
+<p>Through Education, Health, and Culture to Build a Better India</p>
+</div>
+
+<section id="about">
+<h2 class="section-title">About Us</h2>
+<p style="text-align:center; max-width:800px; margin:auto;">
+Sankalp Se Saksham Foundation is a registered NGO working with a mission to build a morally strong and culturally rooted society.
+Our vision is to transform lives by educating underprivileged children, empowering women, organizing health camps, and preserving nature
+through tree plantations. We believe in nurturing the future to eliminate corruption, crime, and inequality – making India a proud Vishwaguru.
+</p>
+</section>
+
+<section id="programs">
+<h2 class="section-title">What We Do</h2>
+<div class="grid">
+<div class="card">
+<h3>📚 Education for All</h3>
+<p>Providing free education, study materials, and moral guidance to children.</p>
+</div>
+<div class="card">
+<h3>🌿 Tree Plantation</h3>
+<p>Creating a greener future through massive plantation drives and awareness.</p>
+</div>
+<div class="card">
+<h3>💉 Health Camps</h3>
+<p>Organizing free medical checkups and wellness programs in remote areas.</p>
+</div>
+<div class="card">
+<h3>👩‍🎓 Women Empowerment</h3>
+<p>Uplifting women through skill-building, education, and financial awareness.</p>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2 class="section-title">Contact Us</h2>
+<p style="text-align:center;"><strong>NGO Email:</strong> sankalpsesakshamfoundation@gmail.com</p>
+<p style="text-align:center;"><strong>Founder:</strong> Mohit Kumar Vats | 📞 7781028518 | ✉️ mohitvats34@gmail.com</p>
+<p style="text-align:center;"><strong>Legal Advisor:</strong> Aditya Raj | 📞 6289347275 | ✉️ adityasi351@gmail.com</p>
+<p style="text-align:center;"><strong>Co-Founder:</strong> Aman Kumar | 📞 9939204761 | ✉️ kumaraman193920@gmail.com</p>
+<p style="text-align:center;"><a href="https://www.instagram.com/sankalpsesaksham_foundation" target="_blank">Follow us on Instagram</a></p>
+</section>
+
+<footer class="footer">
+&copy; 2025 Sankalp Se Saksham Foundation | Regd. No. 076990/2025
+</footer>
+
+</body>
+</html>
